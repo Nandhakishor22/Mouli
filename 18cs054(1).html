@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+             body{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                
+            }
+            header{
+                display: flex;
+                justify-content:end;
+                align-items: center;
+                background-color: #00811c;
+
+            }
+            .links li{
+                display: inline-block;
+                padding: 0px 20px;
+                
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 16px;
+                font-family: 'Roboto', sans-serif; 
+                font-weight: bolder;
+            } 
+           
+            .links li a{
+                
+                transition: all 0.6s ease 0s;
+                
+            }
+            .links li a:hover{
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease 0s;
+            }
+            .links li a.active{
+                background-color: rgb(250, 246, 246);
+                color: rgb(2, 2, 2);
+                
+            }
+            .login{
+                
+                width: 400px;
+                height: 500px;
+                margin:auto;
+                margin-top: 30px;
+                background-color: white;
+                box-shadow: 10px 10px 8px 10px #888888;
+                
+                
+            }
+            .head{
+                text-align: center;
+                background-color: rgb(9, 167, 56);
+                margin: 0;
+                font-family: 'Roboto', sans-serif;  
+               
+            }
+            label{
+                margin-top: 10px;
+                margin-left: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: bolder;
+
+
+            }
+            input{
+                margin-left: 25px;
+
+                font-family: 'Roboto', sans-serif;
+                margin-top: 18px;
+                width: 350px;
+                height: 22px;
+            }
+            input:hover{
+                border: 2px solid green;
+            }
+            .btn{
+                margin-left: 150px;
+                margin-top: 40px;
+                width: 100px;
+                height: 25px;
+                border: none;
+                background-color:rgb(9, 167, 56);
+                transition: all 0.5s ease 0s;
+                font-family: 'Roboto', sans-serif;
+                
+            }
+            .btn:hover{
+                background-color: rgb(8, 121, 42);
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                
+                <ul class="links">
+                <li><a href="18cs054.html">HOME</a></li>
+                <li><a href="18cs054(1).html" class="active">SIGN-UP</a></li>
+                <li><a href="18cs054(2).html">CONTACT</a></li>
+            
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="login">
+        <h1 class="head">SIGN-UP</h1>
+        <form>
+            <label for="name">Username</label><br>
+            <input type="text" name="name"  required><br><br>
+            <label for="mail">Emai-id</label><br>
+            <input type="email" name="mail"  required><br><br>
+            <label for="pwd" >Password</label><br>
+            <input type="password" name="pwd"  required><br><br>
+            <label for="pwd" >Re-enter Password</label><br>
+            <input type="password" name="pwd"  required><br><br>
+            <input type="submit" name="sub" class="btn" value="sign-up">
+
+
+        </form>
+    </div>
+    </body>
+</html>
